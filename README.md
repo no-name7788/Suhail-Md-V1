@@ -39,7 +39,10 @@
 2.  ***Tic Tac Toe.***
 3.  ***Number Guessing Game.***
 4.  ***Word chain Game.***
-5.  ***Rolling Dice.***
+5.  ***Hidden Card Game.***
+6.  ***Rolling Dice.***
+7.  ***Character Guessing Game.***
+.  ***Capital of City Finding.***
 ##
 
 
@@ -52,8 +55,8 @@
  
 ## Deployment Methods
 ---
-1.  ***Get [`SESSION ID`](https://replit.com/@SuhailTechInfo/Secktor-Bot) by scanning QR code. And Scan it `Go-to Whatapp>Three dots>Linked Devices`***
-2.  ***Get Mongodb_URI from [`Mongodb site`](https://www.mongodb.com/) | Watch Tutorial [`To Get Mongodb_URI`](https://youtu.be/6rnftFl0fAI).***
+1.  ***Get `SESSION ID` by [`PAIRING CODE`](https://replit.com/@SuhailTechInfo/SuhailMdPairingCode?v=1) or [`SCAN QR`](https://replit.com/@SuhailTechInfo/Secktor-Bot) code. And then `Go-to Whatapp>Three dots>Linked Devices`***
+2.  ***Get Mongodb_URI from [`Mongodb site`](https://www.mongodb.com/) | Watch Tutorial [`To Get Mongodb_URI`](https://youtu.be/6rnftFl0fAI). `Optional`***
 3.  ***Click [`FORK`](https://github.com/SuhailTechInfo/Suhail-Md/fork) and `Star ⭐ Repository` if you Like that Bot.***
 4.  ***Deploy tutorial [`Youtube Video`](https://youtu.be/6rnftFl0fAI).***
 
