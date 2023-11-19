@@ -1,11 +1,11 @@
 const fs = require('fs-extra')
-if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/config.env' })
+//if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/config.env' })
 
 
 //═══════[Required Variables]════════\\
 global.owner = process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : '923184474176';
 global.mongodb = "coool"  || "mongodb+srv://suhail:suhail@cluster0.tuhzpez.mongodb.net/?retryWrites=true&w=majority" ;//process.env.MONGODB_URI || "mongodb+srv://Suhail:suhail@cluster0.rzhkoqf.mongodb.net/?retryWrites=true&w=majority" ;
- global.DATABASE_URI = process.env.DATABASE_URI || 'null ' || "postgres://drchnhfxnxvkhb:fe7e6999d202f14f61af1837ef5e1eb07980f37b854ba57c34add33a21453009@ec2-3-221-177-27.compute-1.amazonaws.com:5432/d74crch1e6dgt0";
+global.DATABASE_URI = process.env.DATABASE_URI || "postgres://drchnhfxnxvkhb:fe7e6999d202f14f61af1837ef5e1eb07980f37b854ba57c34add33a21453009@ec2-3-221-177-27.compute-1.amazonaws.com:5432/d74crch1e6dgt0";
 global.port= false // Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000  ; 
 global.audio = '' ; 
 global.video = '' ;
@@ -14,7 +14,7 @@ global.allowJids = process.env.ALLOW_JID || "null"||"120363023983262391@g.us";//
 global.email = 'samsamsun789@gmail.com' ;
 global.location = 'Lahore Pakistan' ;
 global.timezone  = process.env.TIME_ZONE || 'Asia/Karachi'
-global.gurl = 'https://youtube.com/c/SuhailTechInfo' ; // add your username
+global.gurl =  process.env.GURL || 'https://youtube.com/c/SuhailTechInfo' ; // add your username
 global.sudo =  process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : 'null,923184474176';
 global.devs = "923184474176"; //Dont change it From here
 global.github  = process.env.YOUR_GITHUB || 'https://github.com/SuhailTechInfo/Suhail-Md';
@@ -38,9 +38,9 @@ module.exports = {
   readmessage: process.env.READ_MESSAGE || 'false',   //  | 'false' | 'true' | 
   readcmds : process.env.READ_COMMANDS || 'false',    //  | 'false' | 'true' | 
   HANDLERS: process.env.PREFIX || ',.',
-  warncount : process.env.WARN_COUNT || '1',
+  warncount : process.env.WARN_COUNT || '2',
   disablepm: process.env.DISABLE_PM || "true",   
-  MsgsInLog:process.env.MSGS_IN_LOG ||'null',
+  MsgsInLog:process.env.MSGS_IN_LOG ||'false', // "true"  to see messages , "log" to open logs messages , "false" to hide logs messages
  // pmMsgsInLog:process.env.PM_MSGS_IN_LOGS ||'true',
  // levelupmessage: process.env.LEVEL_UP_MESSAGE || 'false',  //  | 'false' | 'true' | 
   antilink_values: process.env.ANTILINK_VALUES || 'https://,chat.whatsapp.com',
@@ -50,7 +50,7 @@ module.exports = {
   caption :process.env.CAPTION || "```ᴘᴏᴡᴇʀᴇᴅ ʙʏ sᴜʜᴀɪʟ²²¹-ᴍᴅ```",   //*『sᴜʙsᴄʀɪʙᴇ • sᴜʜᴀɪʟ ᴛᴇᴄʜ』*\n youtube.com/@suhailtechinfo0"),
   OPENAI_API_KEY: process.env.OPENAI_API_KEY ,
   userImages: process.env.USER_IMAGES || "https://a.uguu.se/oACtDCfF.mp4" ||  'https://i.imgur.com/NpA3ZsJ.jpeg,https://telegra.ph/file/d9a63ef4f8110a6d87167.mp4,https://telegra.ph/file/41c41e73c1c5f11bdb1df.mp4,https://telegra.ph/file/acaba47a11c6975248c84.mp4' ,
-  antiDelete: process.env.ANTIDELETE ||  'true' ,
+ // antiDelete: process.env.ANTIDELETE ||  'true' ,
   // antiCallMessage: process.env.ANTICALL_MESSAGE ||  "\`\`\`Hii this is Suhail-Md a Personal Assistant!!\n\n\tSorry for now, we cannot receive calls, whether in a group or personal \n\n if you need help or request features please chat owner\n\n\nPowered by Suhail-Md Chatbot\`\`\`" ,
   VERSION: process.env.VERSION || 'v.1.2.2',
   LANG: process.env.THEME ? process.env.THEME.toUpperCase() : 'SUHAIL',
